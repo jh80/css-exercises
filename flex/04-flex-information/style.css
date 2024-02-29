@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 img {
@@ -9,7 +10,8 @@ img {
 
 .title {
   font-size: 36px;
-  font-weight: 900;
+  font-weight: 900;  
+  margin-bottom: 32px;
 }
 
 /* do not edit this footer */
@@ -24,3 +26,19 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.item {
+  flex: 0 1 200px;
+  /* Their solution is just using 
+  max-width: 200px; 
+  Their solution is probably more elegant because i needed to set numbers
+  that probably didn't need to be specified :for flex-grow and flex-shrink. 
+  I could have just used flex-basis, but they say that is bad form*/
+}
+
