@@ -3,6 +3,11 @@
 html, body {
   height: 100%;
 }
+/*
+* {
+  outline: auto;
+}
+*/
 
 body {
   font-family: Roboto, sans-serif;
@@ -20,6 +25,10 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  flex: none;
 }
 
 .icon {
@@ -33,6 +42,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: none;
 }
 
 .close-button {
@@ -66,4 +76,23 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.header {
+  /*font-weight: 700; /*If I was writing this from scratch I would have used a heading element and adjusted the boldness from there, okay I did lol*/
+  font-size: 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.modal-main {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  margin: 0;
 }
