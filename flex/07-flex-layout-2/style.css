@@ -32,12 +32,11 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
   /* Jenni Added */
-  width: 250px;
+  width: 320px;
 }
 
 /* Jenni Added */
 .main-content {
-  /* Check soution for how they get the main content to strech the sixe of the viewport */
   flex: auto;
   display: flex;
 }
@@ -45,5 +44,7 @@ body {
 .card-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  padding: 45px;
 }
 
