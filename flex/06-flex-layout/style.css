@@ -39,3 +39,15 @@ a {
   text-decoration: none;
   color: #636161;
 }
+
+.header,
+.footer,
+.left-links,
+.right-links {
+  display: flex;
+}
+
+.header,
+.footer {
+  justify-content: space-between;
+}
