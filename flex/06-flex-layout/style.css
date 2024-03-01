@@ -2,17 +2,19 @@
 
 body {
   height: 100vh;
-  margin: 0;
+  margin: 0px;
   overflow: hidden;
   font-family: Roboto, sans-serif;
   /* Jenni Added */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; /* Solution didn't put this */
 }
 
 img {
   width: 600px;
+  /* Jenni Added */
+  padding-bottom: 10px;
 }
 
 button {
@@ -20,6 +22,9 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /* Jenni Added */
+  padding: 8px 12px;
+  margin: 4px; /* Solution didn't put this */
 }
 
 input {
@@ -32,7 +37,7 @@ input {
 
 /* Jenni Added */
 ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -42,9 +47,13 @@ a {
   color: #636161;
 }
 
+.footer {
+  background-color: #eeeeee;
+}
+
 .header,
 .footer,
-.left-links,
+.left-links, /* The solution put the flex on the ul intead on left and right links */
 .right-links {
   display: flex;
 }
@@ -52,4 +61,24 @@ a {
 .header,
 .footer {
   justify-content: space-between;
+  padding: 16px;
+}
+
+.left-links,
+.right-links {
+  gap: 16px; /* In solution gap was placed on ul */
+}
+
+.content {
+  align-self: center;
+  text-align: center;
+  /*
+  what solution put:
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  */
 }
