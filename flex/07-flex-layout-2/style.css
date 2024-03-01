@@ -23,6 +23,10 @@ body {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  /* Jenni Added */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
@@ -38,7 +42,8 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
   /* Jenni Added */
-  width: 320px;
+  width: 300px;
+  padding: 16px;
 }
 
 /* Jenni Added */
@@ -50,8 +55,8 @@ body {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  padding: 45px;
+  gap: 32px;
+  padding: 48px;
 }
 
 ul {
