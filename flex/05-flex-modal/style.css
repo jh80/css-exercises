@@ -83,13 +83,13 @@ button.cancel {
   font-size: 9px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
   flex: 1;
 }
 
 .modal-main {
   display: flex;
-  gap: 8px;
+  gap: 13px;
   flex-wrap: wrap;
 }
 
